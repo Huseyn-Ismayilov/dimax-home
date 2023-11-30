@@ -1,0 +1,18 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 400;
+    gap: 16px;
+    border-radius: 99px;
+    &.btn_lg {
+        padding: 24px 86px;
+    }
+}
+// @media (max-width: map.get($grid-breakpoints, "lg")){
+//     .btn {
+//         padding: 7px 20px;
+//         width: map-get($grid-breakpoints, md);
+//     }
+// }
