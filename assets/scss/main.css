@@ -1076,8 +1076,9 @@ button.swiper-pagination-bullet {
   max-width: 82%;
   height: 100%;
   background-color: white;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: all 0.35s;
+  margin-left: auto;
 }
 .mobile_menu .top {
   position: relative;
@@ -1995,6 +1996,8 @@ button.swiper-pagination-bullet {
 .productDetail .gallery .image img {
   aspect-ratio: 112/61;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: #d9d9d9;
 }
 .productDetail .gallery .swiper-pagination .swiper-pagination-bullet {
@@ -2031,7 +2034,6 @@ button.swiper-pagination-bullet {
   width: 100%;
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
@@ -2085,9 +2087,6 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 991px) {
-  .productDetail .productTitle {
-    justify-content: flex-start;
-  }
   .productDetail .productTitle h1 {
     font-size: 32px;
   }
@@ -2105,9 +2104,23 @@ button.swiper-pagination-bullet {
     width: fit-content;
   }
   .productDetail #tabs-nav a {
-    font-size: 18px;
-    padding: 16px 28px;
+    font-size: 14px;
+    padding: 12px 22px;
     white-space: nowrap;
+  }
+  .productDetail .gallery .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+  }
+  .productDetail .gallery .swiper-pagination .swiper-pagination-bullet::after {
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    top: -5px;
+  }
+  .productDetail .desc p {
+    font-size: 16px;
   }
 }
 .orderForm {

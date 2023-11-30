@@ -1,3 +1,4 @@
+
 $(window).scroll(function () {
 	var scroll = $(window).scrollTop();
 
@@ -99,3 +100,20 @@ var swiper = new Swiper(".productDetail .gallery .slider", {
 		prevEl: ".productDetail .prev_arrow",
 	},
 });
+
+
+// $(document).ready(function() {
+// 	// add all to same gallery
+// 	$(".productDetail .gallery a").attr("data-fancybox","mygallery");
+// 	// assign captions and title from alt-attributes of images:
+// 	$(".productDetail .gallery a").each(function(){
+// 	  $(this).attr("data-caption", $(this).find("img").attr("alt"));
+// 	  $(this).attr("title", $(this).find("img").attr("alt"));
+// 	});
+// 	// start fancybox:
+// 	  $(".productDetail .gallery a").fancybox();
+//   });
+
+Fancybox.bind('.productDetail .gallery a', {
+	groupAll: true,
+});  

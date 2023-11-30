@@ -137,8 +137,9 @@
         max-width: 82%;
         height: 100%;
         background-color: white;
-        transform: translateX(-100%);
+        transform: translateX(100%);
         transition: all 0.35s;
+        margin-left: auto;
     }
     .top {
         position: relative;
