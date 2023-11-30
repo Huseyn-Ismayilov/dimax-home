@@ -50,3 +50,33 @@ $(document).click(function (event) {
 // 	},
 // });
 
+
+$(document).ready(function () {
+	$("a").on('click', function (event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function () {
+
+				window.location.hash = hash;
+			});
+		}
+	});
+});
+
+// End 
+
+$('.selectLanguage .btn').click(function () {
+	$(this).parent().toggleClass('active')
+})
+
+$(document).click(function (event) {
+	if (!$(event.target).closest(".site_header .toggle, .mobile_menu .inner").length) {
+		$("body").find(".mobile_menu .inner").parent().removeClass("opened");
+		$('.site_header .toggle').removeClass('opened');
+	}
+});
+
+// End 

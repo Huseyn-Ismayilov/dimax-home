@@ -28,3 +28,18 @@
         max-width: 1180px;
     }
 }
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1220px;
+    }
+}
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1470px;
+    }
+}
+@media (min-width: 1900px) {
+    .container {
+        max-width: 1670px;
+    }
+}

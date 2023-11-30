@@ -1,11 +1,8 @@
 // Colors
 
 :root {
-    --base-color: var(--grey-light);
-    --grey-light: #272e32;
-    --dark-black: #D6DFE3;
-    --blue: #0082ab;
-    --orange: #c75e00;
-    --orange-light: #f79007;
-    --green: #004F4F;
+    --main-bg: #1e1e1e;
+    --bg-color: #000000cc;
+    --orange-linear: radial-gradient(46.46% 173.72% at 50% 50%, #000 0%, #ff8d31 100%);
+    --grey-linear: linear-gradient(180deg, #636363 0%, #c1c1c1 100%);
 }
