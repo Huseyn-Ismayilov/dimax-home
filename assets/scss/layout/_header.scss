@@ -269,6 +269,7 @@
         .toggle {
             display: none;
         }
+  
     }
 }
 @media (max-width: map.get($grid-breakpoints, "lg")) {
@@ -279,6 +280,16 @@
         }
         .wrapper {
             justify-content: space-between;
+        }
+        .selectLanguage {
+            display: none;
+        }
+    }
+}
+@media (max-width: map.get($grid-breakpoints, "sm")) {
+    .site_header {
+        .site_logo {
+            width: 180px;
         }
     }
 }

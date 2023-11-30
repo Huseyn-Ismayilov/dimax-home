@@ -1186,6 +1186,14 @@ button.swiper-pagination-bullet {
   .site_header .wrapper {
     justify-content: space-between;
   }
+  .site_header .selectLanguage {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .site_header .site_logo {
+    width: 180px;
+  }
 }
 .site_footer {
   background-color: var(--main-bg);
